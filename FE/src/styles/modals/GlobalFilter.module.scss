@@ -1,0 +1,56 @@
+$primary-color: rgba(29, 177, 119, 0.5);
+$secondary-color: rgba(217, 217, 217, 0.7);
+
+
+.filterBtn:hover {
+  cursor: pointer;
+}
+
+.modalContainer {
+  padding: 0.5rem 1.5rem;
+
+  .btnContainer {
+    padding-left: 8px;
+    margin-bottom: 1rem;
+  }
+
+  .activeBtn {
+    font-family: 'KoPubWorld-Dotum-Medium';
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    // font-weight: bold;
+    border-radius: 50px;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+    margin-right: 4px;
+  }
+
+  .unactiveBtn {
+    @extend .activeBtn;
+    background-color: $secondary-color;
+  }
+
+  .filterMenu {
+    display: flex;
+    align-items: center;
+
+    .locationBtn {
+      margin-left: 1rem;
+      border: 1px solid $primary-color;
+      border-radius: 20px;
+      background-color: white;
+      padding: 0.5rem 1rem;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $primary-color;
+        color: white;
+      }
+    }
+  }
+}

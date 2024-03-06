@@ -1,0 +1,23 @@
+.wrapper .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .content .rank {
+  font-style: oblique;
+  font-weight: bold;
+  color: #063925;
+}
+.wrapper .content .name {
+  margin-left: 5px;
+  color: #063925;
+}
+.wrapper .content .name:hover {
+  color: #1db177;
+  cursor: pointer;
+}
+.wrapper .content .follower {
+  display: flex;
+  align-items: center;
+  color: rgba(29, 177, 119, 0.7);
+}/*# sourceMappingURL=UserRankingModal.module.css.map */

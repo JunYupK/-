@@ -1,0 +1,26 @@
+.box {
+  background-color: rgba(29, 177, 119, 0.7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 70px;
+  height: 70px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.box:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.box2 {
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.box2:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}/*# sourceMappingURL=SideBar.module.css.map */

@@ -1,0 +1,21 @@
+.wrapper {
+  height: calc(100vh - 231px);
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.wrapper::-webkit-scrollbar {
+  width: 10px;
+}
+.wrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(29, 177, 119, 0.3);
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 3px solid transparent;
+}
+.wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(29, 177, 119, 0.5);
+}
+.wrapper::-webkit-scrollbar-track {
+  background-color: rgba(220, 220, 220, 0.7);
+  border-radius: 10px;
+}/*# sourceMappingURL=Subscribe.module.css.map */

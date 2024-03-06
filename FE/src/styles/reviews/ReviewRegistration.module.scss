@@ -1,0 +1,75 @@
+.container {
+  padding: 20px;
+
+  .header {
+    padding: 10px;
+  }
+
+  .rating {
+    display: flex;
+    justify-content: center;
+  }
+  .angel {
+    opacity: 0.5;
+  }
+  .friend {
+    display: flex;
+    justify-content: center;
+  }
+
+  .photo {
+    width: 30px;
+    margin-left: -300px;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    border-bottom: 1px #bfbfbf solid;
+    .item {
+      margin-left: 10px;
+    }
+  }
+}
+
+.tag {
+  display: flex; /* 자식 요소들을 수평으로 정렬하기 위해 flex 사용 */
+  flex-direction: column; /* 자식 요소들을 세로로 정렬하기 위해 column 사용 */
+  div {
+    border-radius: 50px;
+    display: flex; /* 내부 요소들을 수평으로 정렬하기 위해 flex 사용 */
+    justify-content: center;
+    align-items: center; /* 내부 요소들을 수직으로 가운데 정렬 */
+    padding: 10px; /* 내부 요소들과의 여백 추가 */
+    border-bottom: 1px solid #ccc; /* 각각의 요소들을 구분하기 위한 border 추가 */
+    width: 70%;
+    padding: 10px;
+    margin: auto;
+    &:hover {
+      background-color: rgba(
+        29,
+        177,
+        119,
+        0.5
+      ); /* 호버시 배경색 변경 */
+      color: white;
+    }
+    .item {
+      margin-left: 30px;
+    }
+    span {
+      font-size: 16px; /* 텍스트 크기 조정 */
+      margin-right: 10px; /* 각 span 요소 사이의 간격 조정 */
+    }
+
+    svg {
+      vertical-align: middle; /* ClearIcon을 텍스트와 수직 정렬 */
+    }
+  }
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+}
+

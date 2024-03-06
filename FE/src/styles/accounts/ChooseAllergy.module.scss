@@ -1,0 +1,66 @@
+.Box {
+  display: flex;
+  justify-content: center;
+}
+
+.allergyBox {
+  margin-top: 15px;
+  width: 580px;
+  height: 240px;
+  overflow: auto;
+}
+
+.allergyBox::-webkit-scrollbar {
+  width: 8px;
+}
+
+.allergyBox::-webkit-scrollbar-thumb {
+  background-color: rgba(29, 177, 119, 0.3);
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+.allergyBox::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(29, 177, 119, 0.5);
+}
+
+.allergyBox::-webkit-scrollbar-track {
+  background-color: rgba(220, 220, 220, 0.7);
+  border-radius: 10px;
+  /* box-shadow: inset 0px 0px 5px white; */
+}
+
+.allergyButton {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 50%;
+  margin: 10px;
+  margin-bottom: 13px;
+}
+
+.allergyButton:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px rgba(29, 177, 119, 0.5);
+  font-weight: bold;
+}
+
+
+.allergyImg {
+  width: 65px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.allergyName {
+  font-size: 12px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -7px;
+  text-shadow: -2px 0 #ffffff, 0 2px #ffffff, 2px 0 #ffffff, 0 -2px #ffffff;
+}

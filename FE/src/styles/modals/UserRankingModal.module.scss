@@ -1,0 +1,25 @@
+.wrapper {
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .rank {
+      font-style: oblique;
+      font-weight: bold;
+      color: rgba(#063925, 1);
+    }
+    .name {
+      margin-left: 5px;
+      color: rgba(#063925, 1);
+      &:hover {
+        color: rgba(#1db177, 1);
+        cursor: pointer;
+      }
+    }
+    .follower {
+      display: flex;
+      align-items: center;
+      color: rgba(#1db177, 0.7);
+    }
+  }
+}

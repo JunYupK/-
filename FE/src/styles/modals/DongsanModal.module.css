@@ -1,0 +1,119 @@
+@charset "UTF-8";
+.box, .staticBox {
+  position: absolute;
+  bottom: 1.2rem;
+  right: 3rem;
+  z-index: 2;
+  border: 2px solid #1db177;
+  border-radius: 15px;
+  background-color: white;
+  opacity: 0.7;
+  height: 15rem;
+  width: 13rem;
+}
+.box .line, .staticBox .line {
+  background: #1db177;
+  height: 0.3px;
+  border: 0;
+}
+.box .title, .staticBox .title {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box .title .refreshBtn:hover, .staticBox .title .refreshBtn:hover {
+  cursor: pointer;
+}
+.box .title .refreshBtn .tooltip, .staticBox .title .refreshBtn .tooltip {
+  position: absolute;
+  background-color: #333; /* 검은 배경색 */
+  color: #fff; /* 흰 글자색 */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+.box .title span, .staticBox .title span {
+  color: #1db177;
+}
+.box .title .staticBtn, .staticBox .title .staticBtn, .box .title button, .staticBox .title button {
+  background-color: white;
+  color: #1db177;
+  border: 1px solid #1db177;
+  border-radius: 20px;
+  padding: 0.2rem 0.6rem;
+  font-size: 11px;
+}
+.box .title .staticBtn:hover, .staticBox .title .staticBtn:hover, .box .title button:hover, .staticBox .title button:hover {
+  cursor: pointer;
+}
+.box .title button, .staticBox .title button {
+  background-color: #1db177;
+  color: white;
+}
+.box .content, .staticBox .content {
+  height: 11rem;
+  overflow-y: auto;
+}
+.box .content::-webkit-scrollbar, .staticBox .content::-webkit-scrollbar {
+  width: 10px;
+}
+.box .content::-webkit-scrollbar-thumb, .staticBox .content::-webkit-scrollbar-thumb {
+  background-color: rgba(29, 177, 119, 0.3);
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 3px solid transparent;
+}
+.box .content::-webkit-scrollbar-thumb:hover, .staticBox .content::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(29, 177, 119, 0.5);
+}
+.box .content::-webkit-scrollbar-track, .staticBox .content::-webkit-scrollbar-track {
+  background-color: rgba(220, 220, 220, 0.7);
+  border-radius: 10px;
+}
+.box .content .profile, .staticBox .content .profile {
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box .content .profile .avatar, .staticBox .content .profile .avatar {
+  margin-left: 0.6rem;
+  margin-right: 0.3rem;
+  width: 24px;
+  height: 24px;
+}
+.box .content .profile .colorCheck, .staticBox .content .profile .colorCheck {
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  border-radius: 12px;
+}
+.box .content .profile .cancel, .staticBox .content .profile .cancel {
+  margin-left: 1rem;
+}
+.box .content .profile .cancel:hover, .staticBox .content .profile .cancel:hover {
+  cursor: pointer;
+}
+.box .content .profile span, .staticBox .content .profile span {
+  margin: 0 0.3rem;
+}
+
+.staticBox {
+  right: 17rem;
+  width: 25rem;
+  height: 5rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+.staticBox p {
+  margin: 0 auto;
+}
+
+.none {
+  display: none;
+}/*# sourceMappingURL=DongsanModal.module.css.map */

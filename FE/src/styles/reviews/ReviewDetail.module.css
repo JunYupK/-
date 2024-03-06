@@ -1,0 +1,22 @@
+.container {
+  padding: 30px;
+}
+.container hr {
+  background-color: black;
+}
+.container .content {
+  margin: auto;
+}
+.container .asideContent {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  border-bottom: 1px #bfbfbf solid;
+}
+.container .asideContent .asideItem {
+  margin-left: 10px;
+}
+.container .footer {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=ReviewDetail.module.css.map */

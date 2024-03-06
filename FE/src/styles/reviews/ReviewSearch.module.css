@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.wrapper {
+  text-align: center;
+  padding: 10px;
+  height: 100px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 음영 추가 */
+}
+.wrapper .footer {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+}/*# sourceMappingURL=ReviewSearch.module.css.map */

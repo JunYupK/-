@@ -1,0 +1,95 @@
+$primary-color: #1db177;
+$secondary-color: #b2b2b2;
+
+.box {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 2;
+  border: 2px solid $primary-color;
+  border-radius: 15px;
+  background-color: white;
+  opacity: 0.7;
+  height: 15rem;
+  width: 10rem;
+
+  .line {
+    background: $primary-color;
+    height: 0.3px;
+    border: 0;
+  }
+
+  .title {
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      color: $primary-color;
+    }
+
+    button {
+      background-color: $primary-color;
+      color: white;
+      border: 0;
+      border-radius: 20px;
+      padding: 0.3rem 1rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .content {
+    height: 11rem;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(29, 177, 119, 0.3);
+      border-radius: 10px;
+      background-clip: padding-box;
+      border: 3px solid transparent;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(29, 177, 119, 0.5);
+    }
+    &::-webkit-scrollbar-track {
+      background-color: rgba(220, 220, 220, 0.7);
+      border-radius: 10px;
+    }
+
+    .profile {
+      margin: 0.5rem;
+      display: flex;
+      align-items: center;
+
+      .avatar {
+        margin-left: 0.6rem;
+        margin-right: 0.3rem;
+      }
+
+      .colorCheck {
+        width: 12px;
+        height: 12px;
+        background-color: red;
+        border-radius: 12px;
+      }
+
+      .cancel {
+        margin-left: 1rem;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      span {
+        margin: 0 0.3rem;
+      }
+    }
+  }
+}

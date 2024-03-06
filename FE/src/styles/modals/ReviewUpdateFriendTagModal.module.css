@@ -1,0 +1,14 @@
+@charset "UTF-8";
+.wrapper {
+  display: flex;
+  position: absolute;
+  border-radius: 20px;
+  z-index: 2;
+  margin-left: 0;
+  margin-top: 10px;
+  background-color: rgb(255, 255, 255);
+  width: 21vw;
+  height: auto;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 음영 추가 */
+}/*# sourceMappingURL=ReviewUpdateFriendTagModal.module.css.map */

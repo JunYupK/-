@@ -1,0 +1,49 @@
+.buttonBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(217, 217, 217, 0.7);
+  padding-bottom: 20px;
+}
+
+.button {
+  width: 140px;
+  height: 40px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 3px;
+}
+
+.button:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 0px rgba(29, 177, 119, 0.5);
+  font-weight: bold;
+}
+
+.buttonLine {
+  border-bottom: 1px solid rgba(29, 177, 119, 0.7);
+  margin: 10px 0;
+  width: 20px;
+}
+
+.tasteBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3px;
+}
+
+.babyImg {
+  width: 20px;
+  margin-right: 3px;
+}
+
+.pepperImg {
+  width: 11px;
+  margin-right: 5px;
+}
+
+.twopepperImg {
+  width: 11px;
+  margin: 0;
+}

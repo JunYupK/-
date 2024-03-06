@@ -1,0 +1,204 @@
+$primary-color: rgba(29, 177, 119, 0.5);
+$secondary-color: rgba(217, 217, 217, 0.7);
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .headline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-left: 4px;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .imgLogo {
+      width: 7rem;
+    }
+
+    .userInfo {
+      padding-right: 1rem;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+
+        li {
+          display: inline-block;
+          margin-right: 1.5rem;
+
+          button {
+            margin: 0;
+          }
+
+          .loginBtn {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0.4rem 0.8rem;
+            border: 1px solid $secondary-color;
+            border-radius: 100px;
+            background-color: white;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          .loginLink {
+            margin-left: 1rem;
+            font-family: 'KoPubWorld-Dotum-Medium';
+            font-size: 13px;
+            font-weight: bold;
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+
+    .searchBox {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .none {
+        display: none !important;
+      }
+
+      .searchWrapper {
+        position: relative;
+        border: 1px solid $secondary-color;
+        border-radius: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        margin-left: 1rem;
+
+        .searchIcon:hover {
+          cursor: pointer;
+        }
+
+        input {
+          border: none;
+          width: 30rem;
+          font-size: 1rem;
+          font-family: 'KoPubWorld-Dotum-Medium';
+        }
+        input:focus {
+          outline: none;
+        }
+
+        .userResult {
+          position: absolute;
+          top: 51.5px;
+          left: 52px;
+          border: 1px solid $secondary-color;
+          border-top: 0px;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          padding: 0.5rem 1rem;
+          padding-top: 1.5rem;
+          z-index: 3;
+          background-color: white;
+          width: 410px;
+
+          .userResultContainer {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+
+            .userResultWrapper {
+              display: flex;
+
+              .userResultInfo {
+                padding: 0 2rem;
+
+                h4 {
+                  margin: 0;
+                }
+              }
+            }
+
+            .followBtn:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .btnContainer {
+        padding-left: 8px;
+      }
+
+      .activeBtn {
+        font-family: 'KoPubWorld-Dotum-Medium';
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        // font-weight: bold;
+        border-radius: 50px;
+        &:hover {
+          cursor: pointer;
+          opacity: 0.8;
+        }
+        margin-right: 4px;
+      }
+
+      .unactiveBtn {
+        @extend .activeBtn;
+        background-color: $secondary-color;
+      }
+    }
+  }
+  .userRank {
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    margin-left: 45vw;
+    .userRankLogo {
+      margin-left: -5vw;
+      position: absolute;
+      margin-top: 0;
+      background-color: rgba(#1db177, 0.7);
+      color: white;
+      border-radius: 2px;
+      padding-bottom: 0.25vw;
+      padding-top: 0.25vw;
+      padding-left: 0.5vw;
+      padding-right: 0.5vw;
+      min-width: 4vw;
+      text-align: center;
+    }
+    .userRankInfo {
+      margin-top: 3px;
+      margin-left: 1vw;
+      .userRankIndex {
+        font-style: oblique;
+        font-weight: bold;
+        color: rgba(#063925, 1);
+      }
+      .userRankName {
+        position: relative;
+        margin-left: 0.4vw;
+        color: rgba(#063925, 1);
+      }
+      .userRankFollower {
+        position: absolute;
+        margin-left: 10vw;
+        color: rgba(#1db177, 0.7);
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+

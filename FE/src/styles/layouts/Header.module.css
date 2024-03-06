@@ -1,0 +1,175 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container .headline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-left: 4px;
+}
+.container .headline a {
+  text-decoration: none;
+  color: black;
+}
+.container .headline .imgLogo {
+  width: 7rem;
+}
+.container .headline .userInfo {
+  padding-right: 1rem;
+}
+.container .headline .userInfo ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+}
+.container .headline .userInfo ul li {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+.container .headline .userInfo ul li button {
+  margin: 0;
+}
+.container .headline .userInfo ul li .loginBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid rgba(217, 217, 217, 0.7);
+  border-radius: 100px;
+  background-color: white;
+}
+.container .headline .userInfo ul li .loginBtn:hover {
+  cursor: pointer;
+}
+.container .headline .userInfo ul li .loginLink {
+  margin-left: 1rem;
+  font-family: "KoPubWorld-Dotum-Medium";
+  font-size: 13px;
+  font-weight: bold;
+  color: rgba(217, 217, 217, 0.7);
+}
+.container .headline .searchBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container .headline .searchBox .none {
+  display: none !important;
+}
+.container .headline .searchBox .searchWrapper {
+  position: relative;
+  border: 1px solid rgba(217, 217, 217, 0.7);
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+}
+.container .headline .searchBox .searchWrapper .searchIcon:hover {
+  cursor: pointer;
+}
+.container .headline .searchBox .searchWrapper input {
+  border: none;
+  width: 30rem;
+  font-size: 1rem;
+  font-family: "KoPubWorld-Dotum-Medium";
+}
+.container .headline .searchBox .searchWrapper input:focus {
+  outline: none;
+}
+.container .headline .searchBox .searchWrapper .userResult {
+  position: absolute;
+  top: 51.5px;
+  left: 52px;
+  border: 1px solid rgba(217, 217, 217, 0.7);
+  border-top: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 0.5rem 1rem;
+  padding-top: 1.5rem;
+  z-index: 3;
+  background-color: white;
+  width: 410px;
+}
+.container .headline .searchBox .searchWrapper .userResult .userResultContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.container .headline .searchBox .searchWrapper .userResult .userResultContainer .userResultWrapper {
+  display: flex;
+}
+.container .headline .searchBox .searchWrapper .userResult .userResultContainer .userResultWrapper .userResultInfo {
+  padding: 0 2rem;
+}
+.container .headline .searchBox .searchWrapper .userResult .userResultContainer .userResultWrapper .userResultInfo h4 {
+  margin: 0;
+}
+.container .headline .searchBox .searchWrapper .userResult .userResultContainer .followBtn:hover {
+  cursor: pointer;
+}
+.container .headline .searchBox .btnContainer {
+  padding-left: 8px;
+}
+.container .headline .searchBox .activeBtn, .container .headline .searchBox .unactiveBtn {
+  font-family: "KoPubWorld-Dotum-Medium";
+  background-color: rgba(29, 177, 119, 0.5);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  margin-right: 4px;
+}
+.container .headline .searchBox .activeBtn:hover, .container .headline .searchBox .unactiveBtn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.container .headline .searchBox .unactiveBtn {
+  background-color: rgba(217, 217, 217, 0.7);
+}
+.container .userRank {
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  margin-left: 45vw;
+}
+.container .userRank .userRankLogo {
+  margin-left: -5vw;
+  position: absolute;
+  margin-top: 0;
+  background-color: rgba(29, 177, 119, 0.7);
+  color: white;
+  border-radius: 2px;
+  padding-bottom: 0.25vw;
+  padding-top: 0.25vw;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  min-width: 4vw;
+  text-align: center;
+}
+.container .userRank .userRankInfo {
+  margin-top: 3px;
+  margin-left: 1vw;
+}
+.container .userRank .userRankInfo .userRankIndex {
+  font-style: oblique;
+  font-weight: bold;
+  color: #063925;
+}
+.container .userRank .userRankInfo .userRankName {
+  position: relative;
+  margin-left: 0.4vw;
+  color: #063925;
+}
+.container .userRank .userRankInfo .userRankFollower {
+  position: absolute;
+  margin-left: 10vw;
+  color: rgba(29, 177, 119, 0.7);
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=Header.module.css.map */

@@ -1,0 +1,44 @@
+.container {
+  // display: grid;
+  // grid-template-rows: 0.5fr 9.5fr;
+  .wrapper {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 8.5fr;
+
+    div {
+      display: 'flex';
+    }
+  }
+}
+
+.hiddenSpace {
+  position: absolute;
+  z-index: 2;
+  height: calc(100vh - 111px);
+  // border-radius: 5px;
+  width: 25vw;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 음영 추가 */
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: center;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(29, 177, 119, 0.3);
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 3px solid transparent;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(29, 177, 119, 0.5);
+  }
+  &::-webkit-scrollbar-track {
+    background-color: rgba(220, 220, 220, 0.7);
+    border-radius: 10px;
+    /* box-shadow: inset 0px 0px 5px white; */
+  }
+}

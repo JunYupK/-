@@ -1,0 +1,93 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .sortBtn {
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+    margin: 10px;
+    margin-bottom: 0px;
+  }
+}
+
+.selected {
+  border: 0px solid white;
+  background-color: rgba(
+    29,
+    177,
+    119,
+    0.5
+  ); /* 원하는 색상으로 변경하세요 */
+  color: white;
+  .contentList {
+    border: 1px solid white;
+    .itemTitle {
+      color: white;
+      font-size: 14px;
+    }
+  }
+}
+
+.container {
+  overflow-y: auto;
+  height: calc(100vh - 293px);
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(29, 177, 119, 0.3);
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 3px solid transparent;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(29, 177, 119, 0.5);
+  }
+  &::-webkit-scrollbar-track {
+    background-color: rgba(220, 220, 220, 0.7);
+    border-radius: 10px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    .contentList {
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0px 0px 10px rgba(55, 55, 55, 0.1);
+      transition: box-shadow 0.3s ease-in-out;
+      &:hover {
+        box-shadow: 0px 0px 20px rgba(55, 55, 55, 0.3);
+      }
+
+      .itemInfo {
+        width: 20vw;
+        display: flex;
+        font-size: 12px;
+        justify-content: space-between;
+        padding: 5px;
+      }
+
+      .itemTitle {
+        color: black;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.footer {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.aside {
+  height: calc(100vh - 370px);
+}

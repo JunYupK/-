@@ -1,0 +1,56 @@
+.wrapper {
+  overflow-y: auto;
+  padding: 0.2rem 0.3rem;
+  display: flex;
+  flex-direction: column;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    border-radius: 10px;
+    padding: 5px 20px;
+    border: 2px solid rgba(29, 177, 119, 0.2);
+    background-color: rgba(29, 177, 119, 0.04);
+    &:hover {
+      box-shadow: 0px 0px 20px rgba(217, 217, 217);
+      cursor: pointer;
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+
+      .info {
+        margin-left: 1.5rem;
+
+        h4 {
+          margin: 0;
+        }
+      }
+    }
+
+    .followerProfile {
+      border: 1px solid rgba(217, 217, 217);
+      padding: 5px;
+      background-color: rgba(217, 217, 217, 0.2);
+    }
+
+    .heartFollower {
+      color: rgb(242, 128, 128);
+      font-size: 14px;
+    }
+  }
+
+  .addBtn:hover {
+    cursor: pointer;
+  }
+}
+
+.aside {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

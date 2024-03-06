@@ -1,0 +1,27 @@
+.container {
+  padding: 30px;
+
+  hr {
+    background-color: black;
+  }
+  
+  .content {
+    margin: auto;
+  }
+
+  .asideContent {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    border-bottom: 1px #bfbfbf solid;
+
+    .asideItem {
+      margin-left: 10px;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+}

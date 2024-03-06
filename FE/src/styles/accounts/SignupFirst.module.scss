@@ -1,0 +1,20 @@
+.main {
+  border: 1px dashed rgba(29, 177, 119, 0.3);
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr; /* 1:2비율 */
+  gap: 0px; /* 셀 간격 */
+}
+
+.gridItem {
+  font-size: 15px;
+  line-height: 1.8;
+  padding: 38px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

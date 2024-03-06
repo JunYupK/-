@@ -1,0 +1,44 @@
+.filterBtn:hover {
+  cursor: pointer;
+}
+
+.modalContainer {
+  padding: 0.5rem 1.5rem;
+}
+.modalContainer .btnContainer {
+  padding-left: 8px;
+  margin-bottom: 1rem;
+}
+.modalContainer .activeBtn, .modalContainer .unactiveBtn {
+  font-family: "KoPubWorld-Dotum-Medium";
+  background-color: rgba(29, 177, 119, 0.5);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 50px;
+  margin-right: 4px;
+}
+.modalContainer .activeBtn:hover, .modalContainer .unactiveBtn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.modalContainer .unactiveBtn {
+  background-color: rgba(217, 217, 217, 0.7);
+}
+.modalContainer .filterMenu {
+  display: flex;
+  align-items: center;
+}
+.modalContainer .filterMenu .locationBtn {
+  margin-left: 1rem;
+  border: 1px solid rgba(29, 177, 119, 0.5);
+  border-radius: 20px;
+  background-color: white;
+  padding: 0.5rem 1rem;
+}
+.modalContainer .filterMenu .locationBtn:hover {
+  cursor: pointer;
+  background-color: rgba(29, 177, 119, 0.5);
+  color: white;
+}/*# sourceMappingURL=GlobalFilter.module.css.map */

@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'KoPubWorld-Dotum-Medium';
+  font-weight: normal;
+  src: url('../src/assets/fonts/KoPubWorld-Dotum-Medium.ttf')
+    format('truetype');
+}
+
+body {
+  font-family: 'KoPubWorld-Dotum-Medium';
+  margin: 0;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  /* font-family: 'KoPubWorld-Dotum-Medium'; */
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

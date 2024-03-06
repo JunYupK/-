@@ -1,0 +1,55 @@
+.wrapper {
+  padding: 8px;
+  border: 1px solid rgba(29, 177, 119, 0.8);
+  display: flex;
+  align-items: center;
+  max-width: none;
+  max-height: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: absolute;
+  font-size: 14px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+  border-radius: 30px 30px 30px 0;
+  background-color: white;
+}
+.wrapper:hover {
+  background-color: rgba(29, 177, 119, 0.8);
+  color: white;
+}
+.wrapper.clicked {
+  background-color: rgba(29, 177, 119, 0.8);
+  color: white;
+}
+.wrapper .imgStyle {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  max-width: none;
+  max-height: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 7px;
+  top: 5px;
+}
+.wrapper .restaurantInfo {
+  margin-left: 35px;
+  margin-right: 5px;
+  white-space: nowrap;
+}
+.wrapper .searchInfo {
+  margin-left: 5px;
+  margin-right: 5px;
+  white-space: nowrap;
+}
+
+.none {
+  display: none;
+}/*# sourceMappingURL=marker.module.css.map */
